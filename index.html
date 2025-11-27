@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Marvin Esteban | Portfolio</title>
+
+<style>
+  :root {
+    --blue: #1a73e8;
+    --blue-light: #e8f0fe;
+    --text-dark: #1d1d1f;
+    --text-muted: #5f6368;
+    --white: #ffffff;
+    --shadow: rgba(0,0,0,0.1);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background: var(--blue-light);
+    color: var(--text-dark);
+    line-height: 1.7;
+  }
+
+  /* NAVBAR */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--white);
+    padding: 15px 40px;
+    box-shadow: 0 2px 8px var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+  }
+
+  nav h1 {
+    color: var(--blue);
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: 0.2s;
+  }
+
+  nav a:hover {
+    color: var(--blue);
+  }
+
+  /* HERO */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #1a73e8 20%, #5ea3ff 100%);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 25px;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--white);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px var(--shadow);
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    opacity: 0.95;
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 80px 12%;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: var(--blue);
+    margin-bottom: 15px;
+  }
+
+  .card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 3px 12px var(--shadow);
+    margin-bottom: 25px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 10px;
+  }
+
+  li {
+    margin-bottom: 8px;
+    color: var(--text-muted);
+  }
+
+  /* CONTACT */
+  a {
+    color: var(--blue);
+    font-weight: 500;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--white);
+    color: var(--text-muted);
+    margin-top: 40px;
+    font-size: 0.95rem;
+    border-top: 1px solid #d5d5d5;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+    nav {
+      padding: 15px 20px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h1>Marvin</h1>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO WITH PROFILE PIC -->
+<div class="hero">
+  <img src="profile.jpg" alt="Marvin Profile Picture" class="profile-pic">
+  <div>
+    <h1>Hello, I'm Marvin Esteban</h1>
+    <p>IT Student • Future Web Developer • Software Creator</p>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      Hi! I’m <strong>Marvin Esteban</strong>, an IT student with a passion for web development
+      and software creation. I enjoy building digital experiences and continuously learning new skills
+      that help me grow as a future IT professional.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Canva Creations</strong> — Creative layouts and graphic designs.</li>
+      <li><strong>C Programming Codes</strong> — Logical programs demonstrating problem-solving.</li>
+      <li><strong>Webpage Portfolio</strong> — My personal site showcasing my skills.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card">
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>C Programming</li>
+      <li>UI/UX Design (Canva)</li>
+      <li>Problem Solving</li>
+      <li>Software Development Basics</li>
+      <li>Continuous Learning</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="card">
+    <p>Email: <a href="mailto:marvinesteban1123@gmail.com">marvinesteban1123@gmail.com</a></p>
+    <p>Phone: <a href="tel:+639456253416">0945 625 3416</a></p>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Marvin Esteban — Portfolio
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
